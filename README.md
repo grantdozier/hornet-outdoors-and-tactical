@@ -1,14 +1,77 @@
-# React + Vite
+# Hornet Outdoors & Tactical
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern e-commerce website for outdoor and tactical gear, built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern, responsive design with dark theme and tactical aesthetics
+- Multi-page navigation with React Router
+- Product category browsing
+- Contact form
+- Mobile-friendly interface
+- Optimized for GitHub Pages deployment
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- React Router 6
+- CSS Variables for theming
+- GitHub Actions for CI/CD
 
-updated
+## Development
+
+### Prerequisites
+
+- Node.js 18+ and npm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/hornet-outdoors-and-tactical.git
+cd hornet-outdoors-and-tactical
+
+# Install dependencies
+npm install
+```
+
+### Development Server
+
+```bash
+npm run dev
+```
+
+This will start the development server at `http://localhost:5173/hornet-outdoors-and-tactical/`
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+### Deployment
+
+The site is automatically deployed to GitHub Pages when changes are pushed to the main branch, thanks to the GitHub Actions workflow in `.github/workflows/deploy.yml`.
+
+## Project Structure
+
+```
+/
+├── public/              # Static files
+│   └── 404.html         # GitHub Pages SPA redirect
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── layouts/         # Page layout components
+│   ├── pages/           # Page components
+│   ├── App.jsx          # Main application with routes
+│   ├── main.jsx         # Application entry point
+│   └── index.css        # Global styles
+└── package.json         # Project dependencies and scripts
+```
+
+## License
+
+All rights reserved  Hornet Outdoors & Tactical
