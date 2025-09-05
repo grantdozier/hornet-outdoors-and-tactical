@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
+import heroImage from '../img/LouisianaBayouMilitia.jpg'
 
 export default function RootLayout() {
   return (
@@ -20,7 +21,7 @@ export default function RootLayout() {
         </div>
       </header>
 
-      <div className="hero">
+      <div className="hero" style={{ backgroundImage: `url(${heroImage})` }}>
         <div className="hero__overlay" />
         <div className="hero__content">
           <h1>Rugged gear. Mission-ready.</h1>
@@ -34,7 +35,7 @@ export default function RootLayout() {
 
       <footer className="footer">
         <div className="container footer__inner">
-          <span>© {new Date().getFullYear()} Hornet Outdoors & Tactical</span>
+          <span> {new Date().getFullYear()} Hornet Outdoors & Tactical</span>
           <span className="muted">Aviator-owned • Field-tested</span>
         </div>
       </footer>
