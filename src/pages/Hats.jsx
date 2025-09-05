@@ -4,9 +4,11 @@ export default function Hats() {
   return (
     <section className="stack">
       <h2>Hats</h2>
-      <p><strong>Header:</strong> Top Off Your Look with Quality Hats</p>
+      <div className="page-header">
+        <h3>Top Off Your Look with Quality Hats</h3>
+      </div>
       <p>
-        <strong>Content:</strong> Complete your outdoor ensemble with our collection of quality hats and headwear. At Hornet Outdoors & Tactical, we understand the importance of protecting yourself from the elements while maintaining a stylish appearance. That's why we offer a selection of hats designed to keep you comfortable and protected in any conditions. Whether you prefer the classic look of a baseball cap or the added warmth of a beanie, our hats are built to withstand the rigors of outdoor adventure. Choose from a variety of styles, colors, and designs to find the perfect hat for your next outing.
+        Complete your outdoor ensemble with our collection of quality hats and headwear. At Hornet Outdoors & Tactical, we understand the importance of protecting yourself from the elements while maintaining a stylish appearance. That's why we offer a selection of hats designed to keep you comfortable and protected in any conditions. Whether you prefer the classic look of a baseball cap or the added warmth of a beanie, our hats are built to withstand the rigors of outdoor adventure. Choose from a variety of styles, colors, and designs to find the perfect hat for your next outing.
       </p>
 
       <div className="grid-3">

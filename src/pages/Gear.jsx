@@ -4,9 +4,11 @@ export default function Gear() {
   return (
     <section className="stack">
       <h2>Gear</h2>
-      <p><strong>Header:</strong> Gear Up for Success</p>
+      <div className="page-header">
+        <h3>Gear Up for Success</h3>
+      </div>
       <p>
-        <strong>Content:</strong> Gear up for success with our comprehensive selection of outdoor and tactical gear. At Hornet Outdoors & Tactical, we're committed to providing you with the tools and equipment you need to excel in any environment. Whether you're hunting, hiking, or engaging in tactical operations, our gear is designed to meet the demands of your adventure. From high-performance optics and rugged backpacks to versatile tools and innovative gadgets, we have everything you need to tackle any challenge with confidence. Explore our gear collection today and prepare to take your outdoor pursuits to the next level.
+        Gear up for success with our comprehensive selection of outdoor and tactical gear. At Hornet Outdoors & Tactical, we're committed to providing you with the tools and equipment you need to excel in any environment. Whether you're hunting, hiking, or engaging in tactical operations, our gear is designed to meet the demands of your adventure. From high-performance optics and rugged backpacks to versatile tools and innovative gadgets, we have everything you need to tackle any challenge with confidence. Explore our gear collection today and prepare to take your outdoor pursuits to the next level.
       </p>
 
       <div className="grid-3">

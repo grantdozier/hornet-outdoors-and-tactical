@@ -5,9 +5,11 @@ export default function Apparel() {
   return (
     <section className="stack">
       <h2>Apparel</h2>
-      <p><strong>Header:</strong> Performance Apparel for Outdoor Enthusiasts</p>
+      <div className="page-header">
+        <h3>Performance Apparel for Outdoor Enthusiasts</h3>
+      </div>
       <p>
-        <strong>Content:</strong> Stay comfortable, protected, and stylish on your outdoor adventures with our performance apparel collection. At Hornet Outdoors & Tactical, we believe that quality clothing is essential for enjoying the outdoors to the fullest. That's why we offer a range of high-performance apparel designed to keep you comfortable and protected in any conditions. From moisture-wicking base layers and insulated jackets to durable pants and breathable shirts, our apparel is engineered for performance and built to last. Whether you're hunting in the backcountry or hiking on the trail, trust Hornet Outdoors & Tactical to keep you covered from head to toe.
+        Stay comfortable, protected, and stylish on your outdoor adventures with our performance apparel collection. At Hornet Outdoors & Tactical, we believe that quality clothing is essential for enjoying the outdoors to the fullest. That's why we offer a range of high-performance apparel designed to keep you comfortable and protected in any conditions. From moisture-wicking base layers and insulated jackets to durable pants and breathable shirts, our apparel is engineered for performance and built to last. Whether you're hunting in the backcountry or hiking on the trail, trust Hornet Outdoors & Tactical to keep you covered from head to toe.
       </p>
 
       <div className="grid-3">

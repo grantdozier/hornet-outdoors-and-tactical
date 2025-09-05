@@ -5,12 +5,12 @@ export default function Shop() {
   return (
     <section className="stack">
       <h2>Shop</h2>
-      <ul>
-        <li><strong>Header:</strong> Explore Our Product Catalog</li>
-        <li>
-          <strong>Content:</strong> Dive into the world of outdoor adventure and tactical excellence with Hornet Outdoors & Tactical. Our extensive product catalog features a wide range of high-quality gear and equipment designed to enhance your outdoor experience and support your mission. Whether you're in need of rugged clothing that can withstand the elements, reliable equipment that won't let you down in the field, or innovative accessories to take your gear to the next level, we have you covered. With a focus on quality, durability, and performance, each item in our catalog has been handpicked by our team of experts to ensure maximum satisfaction and reliability. Shop with confidence at Hornet Outdoors & Tactical and gear up for your next adventure today.
-        </li>
-      </ul>
+      <div className="page-header">
+        <h3>Explore Our Product Catalog</h3>
+      </div>
+      <p>
+        Dive into the world of outdoor adventure and tactical excellence with Hornet Outdoors & Tactical. Our extensive product catalog features a wide range of high-quality gear and equipment designed to enhance your outdoor experience and support your mission. Whether you're in need of rugged clothing that can withstand the elements, reliable equipment that won't let you down in the field, or innovative accessories to take your gear to the next level, we have you covered. With a focus on quality, durability, and performance, each item in our catalog has been handpicked by our team of experts to ensure maximum satisfaction and reliability. Shop with confidence at Hornet Outdoors & Tactical and gear up for your next adventure today.
+      </p>
 
       <div className="grid-3">
         <Link to="/shop/tents-and-camping" className="card">

@@ -4,9 +4,11 @@ export default function TentsCamping() {
   return (
     <section className="stack">
       <h2>Tents and Camping</h2>
-      <p><strong>Header:</strong> Explore Our Tents and Camping Gear</p>
+      <div className="page-header">
+        <h3>Explore Our Tents and Camping Gear</h3>
+      </div>
       <p>
-        <strong>Content:</strong> Elevate your outdoor experience with our premium selection of tents and camping gear. At Hornet Outdoors & Tactical, we understand the importance of reliable shelter and quality equipment when spending time in the great outdoors. Whether you're planning a weekend camping trip with the family or embarking on a backcountry adventure, we have everything you need to stay comfortable, safe, and prepared. From durable tents and sleeping bags to essential camping accessories and survival gear, our collection is designed to meet the needs of outdoor enthusiasts of all levels. Shop now and discover the perfect gear for your next outdoor excursion.
+        Elevate your outdoor experience with our premium selection of tents and camping gear. At Hornet Outdoors & Tactical, we understand the importance of reliable shelter and quality equipment when spending time in the great outdoors. Whether you're planning a weekend camping trip with the family or embarking on a backcountry adventure, we have everything you need to stay comfortable, safe, and prepared. From durable tents and sleeping bags to essential camping accessories and survival gear, our collection is designed to meet the needs of outdoor enthusiasts of all levels. Shop now and discover the perfect gear for your next outdoor excursion.
       </p>
 
       <div className="grid-3">
