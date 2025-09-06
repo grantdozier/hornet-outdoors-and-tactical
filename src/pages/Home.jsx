@@ -1,7 +1,8 @@
-import PlaceholderImage from '../components/PlaceholderImage'
 import { Link } from 'react-router-dom'
+import PlaceholderImage from '../components/PlaceholderImage'
 import Newsletter from '../components/Newsletter'
 import ProductCard from '../components/ProductCard'
+import logoImage from '../img/hornet_outdoors_and_tactical_logo.PNG'
 
 export default function Home() {
   // Sample featured products
@@ -29,7 +30,13 @@ export default function Home() {
             <Link to="/about" className="btn btn--ghost">About Us</Link>
           </div>
         </div>
-        <PlaceholderImage ratio="4/3" label="Hero / lifestyle image" />
+        <div className="logo-container">
+          <img 
+            src={logoImage} 
+            alt="Hornet Outdoors & Tactical Logo" 
+            className="logo-image"
+          />
+        </div>
       </div>
 
       <div className="section-header">
