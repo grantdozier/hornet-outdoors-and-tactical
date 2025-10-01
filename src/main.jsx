@@ -7,7 +7,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/hornet-outdoors-and-tactical">
+    <BrowserRouter basename="/">
       <ScrollToTop />
       <App />
     </BrowserRouter>
