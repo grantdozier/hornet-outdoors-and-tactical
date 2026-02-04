@@ -15,7 +15,8 @@ export default function RootLayout() {
       <header className="nav">
         <div className="nav__inner">
           <NavLink to="/" className="brand">
-            Hornet Outdoors & Tactical
+            <span className="brand__full">Hornet Outdoors & Tactical</span>
+            <span className="brand__short">Hornet</span>
           </NavLink>
 
           <nav className="links">
