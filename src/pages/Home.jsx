@@ -1,17 +1,10 @@
 import { Link } from 'react-router-dom'
-import PlaceholderImage from '../components/PlaceholderImage'
 import Newsletter from '../components/Newsletter'
 import ProductCard from '../components/ProductCard'
 import logoImage from '../img/hornet_outdoors_and_tactical_logo.PNG'
+import { products, categories } from '../data/inventory'
 
 export default function Home() {
-  // Sample featured products
-  const featuredProducts = [
-    { title: 'Tactical Backpack', price: '149.99', imageLabel: 'Tactical Backpack', link: '/shop/gear' },
-    { title: 'Outdoor Knife', price: '89.99', imageLabel: 'Outdoor Knife', link: '/shop/gear' },
-    { title: 'Premium Hat', price: '34.99', imageLabel: 'Premium Hat', link: '/shop/apparel/hats' },
-    { title: 'Camping Tent', price: '299.99', imageLabel: 'Camping Tent', link: '/shop/tents-and-camping' }
-  ];
 
   return (
     <section className="stack">
@@ -31,44 +24,55 @@ export default function Home() {
           </div>
         </div>
         <div className="logo-container">
-          <img 
-            src={logoImage} 
-            alt="Hornet Outdoors & Tactical Logo" 
+          <img
+            src={logoImage}
+            alt="Hornet Outdoors & Tactical Logo"
             className="logo-image"
           />
         </div>
       </div>
 
+      {products.length > 0 && (
+        <>
+          <div className="section-header">
+            <h2>Featured Products</h2>
+            <Link to="/shop" className="btn btn--ghost">View All</Link>
+          </div>
+
+          <div className="grid-4">
+            {products.map((product) => (
+              <ProductCard
+                key={product.id}
+                title={product.name}
+                price={product.price.toFixed(2)}
+                imageSrc={product.image}
+                link={`/shop/${product.category.toLowerCase()}/${product.slug}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
       <div className="section-header">
-        <h2>Featured Products</h2>
-        <Link to="/shop" className="btn btn--ghost">View All</Link>
-      </div>
-      
-      <div className="grid-4">
-        {featuredProducts.map((product, index) => (
-          <ProductCard 
-            key={index}
-            title={product.title}
-            price={product.price}
-            imageLabel={product.imageLabel}
-            link={product.link}
-          />
-        ))}
+        <h2>Shop by Category</h2>
       </div>
 
       <div className="grid-3">
-        <Link to="/shop/tents-and-camping" className="card">
-          <PlaceholderImage label="Category: Tents & Camping" />
-          <div className="card__body"><h3>Tents & Camping</h3></div>
-        </Link>
-        <Link to="/shop/gear" className="card">
-          <PlaceholderImage label="Category: Gear" />
-          <div className="card__body"><h3>Gear</h3></div>
-        </Link>
-        <Link to="/shop/apparel" className="card">
-          <PlaceholderImage label="Category: Apparel" />
-          <div className="card__body"><h3>Apparel</h3></div>
-        </Link>
+        {categories.map((category) => (
+          <Link key={category.id} to={`/shop/${category.slug}`} className="card category-card">
+            <div className="card__body">
+              <h3>{category.name}</h3>
+              <p className="category-card__status">
+                {category.comingSoon ? (
+                  <span className="badge badge--coming-soon">Coming {category.availableDate}</span>
+                ) : (
+                  <span className="badge badge--available">{category.itemCount} {category.itemCount === 1 ? 'item' : 'items'}</span>
+                )}
+              </p>
+              <p className="text-muted">{category.description}</p>
+            </div>
+          </Link>
+        ))}
       </div>
 
       <Newsletter 
