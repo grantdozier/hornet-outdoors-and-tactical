@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroImage from '../img/LouisianaBayouMilitia.jpg';
+import heroImage from '../img/hornet_pic_3.JPG';
 
 export default function About() {
   const instagramHandle = 'hornetoutdoors_tactical';
@@ -63,7 +63,7 @@ export default function About() {
           </p>
         </div>
         <div className="about-hero__image">
-          <img src={heroImage} alt="Louisiana Bayou" />
+          <img src={heroImage} alt="Hornet Outdoors & Tactical" />
         </div>
       </div>
 

@@ -126,8 +126,8 @@ export default function Contact() {
                 </div>
                 <div className="contact-method__content">
                   <div className="contact-method__label">Email</div>
-                  <a href="mailto:contact@hornetoutdoors.com" className="contact-method__value">
-                    contact@hornetoutdoors.com
+                  <a href="mailto:matthew@hornetot.com" className="contact-method__value">
+                    matthew@hornetot.com
                   </a>
                 </div>
               </div>
@@ -145,8 +145,8 @@ export default function Contact() {
                 </div>
                 <div className="contact-method__content">
                   <div className="contact-method__label">Phone</div>
-                  <a href="tel:+15551234567" className="contact-method__value">
-                    (555) 123-4567
+                  <a href="tel:+18435408503" className="contact-method__value">
+                    (843) 540-8503
                   </a>
                 </div>
               </div>

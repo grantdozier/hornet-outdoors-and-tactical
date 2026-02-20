@@ -4,7 +4,7 @@ import { products } from '../data/inventory';
 import { useCart } from '../context/CartContext';
 
 export default function ProductDetail() {
-  const { slug } = useParams();
+  const { category, subcategory, slug } = useParams();
   const navigate = useNavigate();
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
@@ -52,6 +52,12 @@ export default function ProductDetail() {
         <Link to="/shop">Shop</Link>
         <span className="breadcrumb__separator">›</span>
         <Link to={`/shop/${product.category.toLowerCase()}`}>{product.category}</Link>
+        {subcategory && (
+          <>
+            <span className="breadcrumb__separator">›</span>
+            <Link to={`/shop/${product.category.toLowerCase()}/${subcategory}`}>{subcategory.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase())}</Link>
+          </>
+        )}
         <span className="breadcrumb__separator">›</span>
         <span className="breadcrumb__current">{product.name}</span>
       </div>
@@ -133,8 +139,8 @@ export default function ProductDetail() {
       </div>
 
       {/* Back to Category */}
-      <Link to={`/shop/${product.category.toLowerCase()}`} className="btn btn--ghost">
-        ← Back to {product.category}
+      <Link to={subcategory ? `/shop/${product.category.toLowerCase()}/${subcategory}` : `/shop/${product.category.toLowerCase()}`} className="btn btn--ghost">
+        ← Back to {subcategory ? subcategory.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : product.category}
       </Link>
     </section>
   );
