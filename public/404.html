@@ -1,4 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><script>
-  sessionStorage.redirect = location.pathname;
-  location.replace('/hornet-outdoors-and-tactical/');
+  var path = location.pathname + location.search + location.hash;
+  sessionStorage.redirect = path;
+  location.replace('/');
 </script></head><body></body></html>
